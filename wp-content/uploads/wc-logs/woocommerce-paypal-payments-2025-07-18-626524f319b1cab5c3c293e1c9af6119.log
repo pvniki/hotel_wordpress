@@ -1,0 +1,51 @@
+2025-07-18T12:52:13+00:00 DEBUG #2217 - [New Request] POST /wordpress/wp-json/wc-admin/plugins/install
+2025-07-18T12:52:13+00:00 DEBUG #2217 - GET https://api.woocommerce.com/integrations/ppc/v1/notifications/webhooks
+Response: Array
+(
+    [code] => 404
+    [message] => Not Found
+)
+
+Response Body: {"statusCode":404,"error":"Not Found","message":"Not Found"}
+
+2025-07-18T12:52:13+00:00 ERROR #2217 - Failed to delete webhooks: [Error] Not Found
+2025-07-18T12:52:13+00:00 INFO #2217 - Webhooks deleted.
+2025-07-18T12:52:14+00:00 DEBUG #2217 - POST https://api.woocommerce.com/integrations/ppc/v1/notifications/webhooks
+Request Body: {"url":"https:\/\/localhost\/wordpress\/wp-json\/paypal\/v1\/incoming","event_types":[{"name":"CHECKOUT.ORDER.APPROVED"},{"name":"CHECKOUT.ORDER.COMPLETED"},{"name":"CHECKOUT.PAYMENT-APPROVAL.REVERSED"},{"name":"PAYMENT.CAPTURE.REFUNDED"},{"name":"PAYMENT.AUTHORIZATION.VOIDED"},{"name":"PAYMENT.CAPTURE.REVERSED"},{"name":"PAYMENT.ORDER.CANCELLED"},{"name":"PAYMENT.CAPTURE.DENIED"},{"name":"PAYMENT.CAPTURE.COMPLETED"},{"name":"VAULT.PAYMENT-TOKEN.CREATED"},{"name":"VAULT.PAYMENT-TOKEN.DELETED"},{"name":"PAYMENT.CAPTURE.PENDING"},{"name":"PAYMENT.SALE.COMPLETED"},{"name":"PAYMENT.SALE.REFUNDED"},{"name":"BILLING.SUBSCRIPTION.CANCELLED"},{"name":"BILLING.PLAN.PRICING-CHANGE.ACTIVATED"},{"name":"CATALOG.PRODUCT.UPDATED"},{"name":"BILLING.PLAN.UPDATED"}]}
+Response: Array
+(
+    [code] => 404
+    [message] => Not Found
+)
+
+Response Body: {"statusCode":404,"error":"Not Found","message":"Not Found"}
+
+2025-07-18T12:52:14+00:00 ERROR #2217 - Failed to subscribe webhooks: [Error] Not Found
+2025-07-18T13:02:14+00:00 DEBUG #2430 - [New Request] GET /wordpress/wp-json/wc/v3/wc_paypal/webhooks
+2025-07-18T13:02:14+00:00 DEBUG #2430 - GET https://api.woocommerce.com/integrations/ppc/v1/notifications/webhooks
+Response: Array
+(
+    [code] => 404
+    [message] => Not Found
+)
+
+Response Body: {"statusCode":404,"error":"Not Found","message":"Not Found"}
+
+2025-07-18T13:02:43+00:00 DEBUG #3091 - [New Request] POST /wordpress/wp-json/wc/v3/wc_paypal/login_link
+2025-07-18T13:02:43+00:00 INFO #3091 - Generating onboarding URL for: production-express_checkout-
+2025-07-18T13:02:45+00:00 DEBUG #3091 - POST https://api.woocommerce.com/integrations/ppc/v2/customer/partner-referrals
+Request Body: {"partner_config_override":{"return_url":"http:\/\/localhost\/wordpress\/wp-admin\/admin.php?page=wc-settings&tab=checkout&section=ppcp-gateway&ppcpToken=eyJrIjoicHJvZHVjdGlvbi1leHByZXNzX2NoZWNrb3V0LSIsInUiOjEsImgiOiIwY2VhNTI2NDVjM2I1ZjM3NjNhMDY0ZjJhMDE2MTUzYSJ9","return_url_description":"Return to your shop.","show_add_credit_card":false},"products":["EXPRESS_CHECKOUT"],"legal_consents":[{"type":"SHARE_DATA_CONSENT","granted":true}],"operations":[{"operation":"API_INTEGRATION","api_integration_preference":{"rest_api_integration":{"integration_method":"PAYPAL","integration_type":"FIRST_PARTY","first_party_details":{"features":["PAYMENT","REFUND","ADVANCED_TRANSACTIONS_SEARCH","TRACKING_SHIPMENT_READWRITE","BILLING_AGREEMENT"],"seller_nonce":"a1233wtergfsdt4365tzrshgfbaewa36AGa1233wtergfsdt4365tzrshgfbaewa36AG"}}}}]}
+Response Debug ID: 5682fab27539a
+Response: Array
+(
+    [code] => 201
+    [message] => Created
+)
+
+
+2025-07-18T13:02:49+00:00 DEBUG #9004 - [New Request] POST /wordpress/wp-json/wc/v3/wc_paypal/login_link
+2025-07-18T13:02:49+00:00 DEBUG #9004 - Loaded onboarding URL from cache: production-express_checkout-
+2025-07-18T13:02:49+00:00 INFO #9004 - Using cached onboarding URL for: production-express_checkout-
+2025-07-18T13:02:49+00:00 DEBUG #1277 - [New Request] POST /wordpress/wp-json/wc/v3/wc_paypal/login_link
+2025-07-18T13:02:49+00:00 DEBUG #1277 - Loaded onboarding URL from cache: production-express_checkout-
+2025-07-18T13:02:49+00:00 INFO #1277 - Using cached onboarding URL for: production-express_checkout-
